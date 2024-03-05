@@ -9,14 +9,14 @@ import Foundation
 
 struct SinglyLinkedList<E> {
     
-    // TODO: Write tests for this
+    // TODO: Write test that it returns false after element added
     func isEmpty() -> Bool {
         true
     }
     
-    // TODO: Write tests for this
+    // TODO: Write test that size increases as elements added
     func size() -> UInt {
-        UInt.max
+        0
     }
     
     // TODO: Write tests for this
