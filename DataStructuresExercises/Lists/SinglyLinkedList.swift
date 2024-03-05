@@ -11,7 +11,7 @@ struct SinglyLinkedList<E> {
     
     // TODO: Write tests for this
     func isEmpty() -> Bool {
-        false
+        true
     }
     
     // TODO: Write tests for this
