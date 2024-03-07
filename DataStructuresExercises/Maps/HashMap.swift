@@ -9,9 +9,9 @@ import Foundation
 
 struct HashMap<K : Hashable, V : Hashable> {
     
-    // TODO: Write tests for this
+    // TODO: Write test that this changes to false after element added
     func isEmpty() -> Bool {
-        false
+        true
     }
     
 }
