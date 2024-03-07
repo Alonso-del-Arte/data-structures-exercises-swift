@@ -14,5 +14,13 @@ final class HashMapTests: XCTestCase {
         let message = "New map should be empty"
         XCTAssertTrue(map.isEmpty(), message)
     }
+    
+    func testSizeZeroAtFirst() {
+        let map = HashMap<Duration, Unicode.CanonicalCombiningClass>()
+        let expected: UInt = 0
+        let actual = map.size()
+        let message = "New map should be of size 0"
+        XCTAssertEqual(expected, actual, message)
+    }
 
 }
