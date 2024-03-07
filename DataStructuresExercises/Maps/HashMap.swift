@@ -9,4 +9,9 @@ import Foundation
 
 struct HashMap<K : Hashable, V : Hashable> {
     
+    // TODO: Write tests for this
+    func isEmpty() -> Bool {
+        false
+    }
+    
 }
