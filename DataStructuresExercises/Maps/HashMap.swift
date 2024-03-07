@@ -14,4 +14,9 @@ struct HashMap<K : Hashable, V : Hashable> {
         true
     }
     
+    // TODO: Write tests for this
+    func size() -> UInt {
+        UInt.max
+    }
+    
 }
