@@ -30,5 +30,16 @@ final class SinglyLinkedListTests: XCTestCase {
         let message = "Newly created list should be of size 0"
         XCTAssertEqual(expected, actual, message)
     }
+    
+    func testSize() {
+        var list = SinglyLinkedList<UInt>()
+        let max = UInt.random(in: 2 ... 10)
+        for expected in 1 ... max {
+            list.add(element: expected)
+            let actual = list.size()
+            let message = "So far list should have \(expected) element(s)"
+            XCTAssertEqual(expected, actual, message)
+        }
+    }
 
 }
