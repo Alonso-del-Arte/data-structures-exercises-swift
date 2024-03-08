@@ -11,18 +11,20 @@ struct SinglyLinkedList<E> {
     
     private var empty: Bool = true
     
+    private var itemCount: UInt = 0
+    
     func isEmpty() -> Bool {
         self.empty
     }
     
-    // TODO: Write test that size increases as elements added
     func size() -> UInt {
-        0
+        self.itemCount
     }
     
     // TODO: Write more tests for this
     mutating func add(element: E) {
         self.empty = false
+        self.itemCount += 1
     }
     
 }
