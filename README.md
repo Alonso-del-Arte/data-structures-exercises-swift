@@ -23,3 +23,8 @@ Including, but not limited to:
 * Sets
     * Hashtable-backed
     * Tree-backed?
+
+To keep the project scope manageable for the alloted time period, I will only 
+work on mutable data structures. However, by the time Hacktoberfest rolls 
+around, I might expand this to immutable data structures (excluding caches, of 
+course).
