@@ -16,7 +16,7 @@ final class SinglyLinkedListTests: XCTestCase {
     }
     
     func testIsNotEmpty() {
-        let list = SinglyLinkedList<Date>()
+        var list = SinglyLinkedList<Date>()
         let date = Date()
         list.add(element: date)
         let message = "List of dates should not be empty after adding \(date)"
