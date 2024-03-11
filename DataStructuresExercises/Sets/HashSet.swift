@@ -9,9 +9,9 @@ import Foundation
 
 struct HashSet<E : Hashable> {
     
-    // TODO: Write tests for this
+    // TODO: Write test that this changes to false after add()
     func isEmpty() -> Bool {
-        false
+        true
     }
     
     // TODO: Write tests for this
