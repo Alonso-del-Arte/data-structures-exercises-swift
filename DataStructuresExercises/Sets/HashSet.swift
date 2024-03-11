@@ -9,9 +9,10 @@ import Foundation
 
 struct HashSet<E : Hashable> {
     
-    // TODO: Write test that this changes to false after add()
+    private var empty: Bool = true
+    
     func isEmpty() -> Bool {
-        true
+        self.empty
     }
     
     // TODO: Write test that this number goes up after adds
@@ -21,7 +22,7 @@ struct HashSet<E : Hashable> {
     
     // TODO: Write tests for this
     mutating func add(element: E) {
-        //
+        self.empty = false
     }
         
 }
