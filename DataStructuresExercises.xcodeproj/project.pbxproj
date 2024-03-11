@@ -21,6 +21,7 @@
 		61F935BB2B9F97F500350D4B /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F935BA2B9F97F500350D4B /* HashSet.swift */; };
 		61F935BE2B9F98C200350D4B /* HashSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F935BD2B9F98C200350D4B /* HashSetTests.swift */; };
 		61F935BF2B9F98C200350D4B /* HashSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F935BD2B9F98C200350D4B /* HashSetTests.swift */; };
+		61F935C02B9F99D900350D4B /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F935BA2B9F97F500350D4B /* HashSet.swift */; };
 		61FB4ADD2B9910E600B47301 /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB4ADC2B9910E600B47301 /* HashMap.swift */; };
 		61FB4AE02B99758600B47301 /* HashMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB4ADF2B99758600B47301 /* HashMapTests.swift */; };
 		61FB4AE12B99758600B47301 /* HashMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB4ADF2B99758600B47301 /* HashMapTests.swift */; };
@@ -281,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F935C02B9F99D900350D4B /* HashSet.swift in Sources */,
 				61B8F5FA2B97BFE900750C7E /* SinglyLinkedList.swift in Sources */,
 				61B8F5F62B97BF0100750C7E /* LRUCache.swift in Sources */,
 				61B450132B9A559000515C99 /* HashMap.swift in Sources */,
