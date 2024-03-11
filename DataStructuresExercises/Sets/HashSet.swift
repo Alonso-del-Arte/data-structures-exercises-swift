@@ -14,9 +14,9 @@ struct HashSet<E : Hashable> {
         true
     }
     
-    // TODO: Write tests for this
+    // TODO: Write test that this number goes up after adds
     func size() -> UInt {
-        UInt.max
+        0
     }
     
     // TODO: Write tests for this
