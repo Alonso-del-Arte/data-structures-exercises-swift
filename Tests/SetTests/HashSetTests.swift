@@ -22,5 +22,13 @@ final class HashSetTests: XCTestCase {
         let message = "Newly created set should be of size 0"
         XCTAssertEqual(expected, actual, message)
     }
+    
+    func testIsNotEmpty() {
+        var set = HashSet<String>()
+        let string = Date().formatted()
+        set.add(element: string)
+        let message = "Set should not be empty after adding \"\(string)\""
+        XCTAssertFalse(set.isEmpty(), message)
+    }
 
 }
