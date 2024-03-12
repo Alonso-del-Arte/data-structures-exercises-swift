@@ -53,5 +53,13 @@ final class HashSetTests: XCTestCase {
             currNumber += firstNumber
         }
     }
+    
+    func testContains() {
+        var set = HashSet<Int8>()
+        let number = Int8.random(in: -64 ... 63)
+        set.add(element: number)
+        let message = "Set should contain \(number)"
+        XCTAssertTrue(set.contains(element: number), message)
+    }
 
 }
