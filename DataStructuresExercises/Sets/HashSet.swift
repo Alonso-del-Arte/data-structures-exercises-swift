@@ -21,6 +21,10 @@ struct HashSet<E : Hashable> {
         self.count
     }
     
+    func contains(element: E) -> Bool {
+        true
+    }
+    
     // TODO: Write tests for this
     mutating func add(element: E) {
         self.empty = false
