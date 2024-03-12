@@ -11,18 +11,20 @@ struct HashSet<E : Hashable> {
     
     private var empty: Bool = true
     
+    private var count: UInt = 0
+    
     func isEmpty() -> Bool {
         self.empty
     }
     
-    // TODO: Write test that this number goes up after adds
     func size() -> UInt {
-        0
+        self.count
     }
     
     // TODO: Write tests for this
     mutating func add(element: E) {
         self.empty = false
+        self.count += 1
     }
         
 }
