@@ -30,5 +30,21 @@ final class HashSetTests: XCTestCase {
         let message = "Set should not be empty after adding \"\(string)\""
         XCTAssertFalse(set.isEmpty(), message)
     }
+    
+    func testSize() {
+        var set = HashSet<Double>()
+        let firstNumber = Double.random(in: 2.0 ... 3.0)
+        var currNumber = firstNumber
+        var expected: UInt = 0
+        while (currNumber < Double.infinity) {
+            set.add(element: currNumber)
+            expected += 1
+            let actual = set.size()
+            let message = "With \(currNumber), set has \(expected) elements"
+            XCTAssertEqual(expected, actual, message)
+            currNumber *= currNumber
+            currNumber += firstNumber
+        }
+    }
 
 }
