@@ -9,9 +9,10 @@ import Foundation
 
 struct ArrayBackedList<E> {
     
-    // TODO: Write tests for this
+    private var empty: Bool = true
+    
     func isEmpty() -> Bool {
-        true
+        self.empty
     }
     
     // TODO: Write tests for this
@@ -21,7 +22,7 @@ struct ArrayBackedList<E> {
     
     // TODO: Write tests for this
     mutating func add(element: E) {
-        //
+        self.empty = false
     }
     
     init(initialCapacity: UInt) {
