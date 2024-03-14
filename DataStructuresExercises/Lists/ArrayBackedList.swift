@@ -16,7 +16,7 @@ struct ArrayBackedList<E> {
     
     // TODO: Write tests for this
     func size() -> UInt {
-        UInt.max
+        UInt.min
     }
     
     // TODO: Write tests for this
