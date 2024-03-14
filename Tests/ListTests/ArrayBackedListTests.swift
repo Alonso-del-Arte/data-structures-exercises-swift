@@ -24,4 +24,13 @@ final class ArrayBackedListTests: XCTestCase {
         let message = "Newly created list should be of size 0"
         XCTAssertEqual(expected, actual, message)
     }
+    
+    func testIsNotEmpty() {
+        var list = ArrayBackedList<Locale>(initialCapacity: ArrayBackedListTests.DEFAULT_TEST_INIT_CAP)
+        let locale = Locale.current
+        list.add(element: locale)
+        let message = "List should not be empty after adding \(locale)"
+        XCTAssertFalse(list.isEmpty(), message)
+    }
+    
 }
