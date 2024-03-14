@@ -11,7 +11,7 @@ struct ArrayBackedList<E> {
     
     // TODO: Write tests for this
     func isEmpty() -> Bool {
-        false
+        true
     }
     
     // TODO: Write tests for this
@@ -24,7 +24,7 @@ struct ArrayBackedList<E> {
         //
     }
     
-    init(initialCapacity: Int) {
+    init(initialCapacity: UInt) {
         //
     }
     
