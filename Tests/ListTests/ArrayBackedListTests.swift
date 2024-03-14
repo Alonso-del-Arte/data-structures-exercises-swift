@@ -17,4 +17,11 @@ final class ArrayBackedListTests: XCTestCase {
         XCTAssertTrue(list.isEmpty(), message)
     }
     
+    func testSizeZeroAtFirst() {
+        let list = ArrayBackedList<Calendar>(initialCapacity: ArrayBackedListTests.DEFAULT_TEST_INIT_CAP)
+        let expected: UInt = 0
+        let actual = list.size()
+        let message = "Newly created list should be of size 0"
+        XCTAssertEqual(expected, actual, message)
+    }
 }
