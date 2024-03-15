@@ -33,4 +33,15 @@ final class ArrayBackedListTests: XCTestCase {
         XCTAssertFalse(list.isEmpty(), message)
     }
     
+    func testSize() {
+        let capacity = UInt.random(in: 5 ... 20)
+        var list = ArrayBackedList<UInt>(initialCapacity: capacity)
+        for expected in 0 ..< capacity {
+            let actual = list.size()
+            let message = "List should now have \(expected) elements(s)"
+            XCTAssertEqual(expected, actual, message)
+            list.add(element: expected)
+        }
+    }
+    
 }
