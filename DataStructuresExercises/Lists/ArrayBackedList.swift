@@ -11,18 +11,20 @@ struct ArrayBackedList<E> {
     
     private var empty: Bool = true
     
+    private var count: UInt = 0
+    
     func isEmpty() -> Bool {
         self.empty
     }
     
-    // TODO: Write tests for this
     func size() -> UInt {
-        UInt.min
+        self.count
     }
     
     // TODO: Write tests for this
     mutating func add(element: E) {
         self.empty = false
+        self.count += 1
     }
     
     init(initialCapacity: UInt) {
