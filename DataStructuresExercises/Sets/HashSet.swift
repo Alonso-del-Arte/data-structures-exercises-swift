@@ -22,7 +22,7 @@ struct HashSet<E : Hashable> {
     }
     
     func contains(element: E) -> Bool {
-        false
+        true
     }
     
     // TODO: Write tests for this
