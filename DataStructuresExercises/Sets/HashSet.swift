@@ -34,10 +34,10 @@ struct HashSet<E : Hashable> {
         }
     }
     
-    mutating func contains(element: E) -> Bool {true
-//        let code = UInt8(truncatingIfNeeded: element.hashValue)
-//        var bucket = self.getBucket(hash: code)
-//        return bucket.contains(element: element)
+    mutating func contains(element: E) -> Bool {
+        let code = UInt8(truncatingIfNeeded: element.hashValue)
+        let bucket = self.getBucket(hash: code)
+        return bucket.contains(element: element)
     }
     
     // TODO: Write tests for this
