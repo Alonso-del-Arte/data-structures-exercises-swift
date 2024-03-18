@@ -24,7 +24,7 @@ final class HashSetTests: XCTestCase {
     }
     
     func testEmptySetDoesNotContainAnyElement() {
-        let set = HashSet<Date>()
+        var set = HashSet<Date>()
         let now = Date()
         let message = "Empty set should not contain \(now)"
         XCTAssertFalse(set.contains(element: now), message)
