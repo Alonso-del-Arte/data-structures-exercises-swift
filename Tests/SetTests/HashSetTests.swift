@@ -61,5 +61,16 @@ final class HashSetTests: XCTestCase {
         let message = "Set should contain \(number)"
         XCTAssertTrue(set.contains(element: number), message)
     }
+    
+    func testDoesNotContain() {
+        var set = HashSet<String>()
+        let number = Int64.random(in: Int64.min ... Int64.max)
+        let string = String(number)
+        set.add(element: string)
+        let otherNumber = (~number) << 1
+        let otherString = String(otherNumber)
+        let message = "Set should contain \"\(string)\", not \"\(otherNumber)\""
+        XCTAssertFalse(set.contains(element: otherString), message)
+    }
 
 }
