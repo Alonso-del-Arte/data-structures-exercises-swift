@@ -30,4 +30,14 @@ final class ArrayBackedSetTests: XCTestCase {
         XCTAssertFalse(set.contains(element: now), message)
     }
     
+    func testAdd() {
+        var set = ArrayBackedSet<Locale>()
+        let here = Locale.current
+        let message = "Should be able to add \(here) to empty set"
+        XCTAssertTrue(set.add(element: here), message)
+    }
+    
+    // TODO: Test is not empty
+    
+    // TODO: Test contains and does not contain for non-empty sets
 }
