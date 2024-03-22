@@ -15,4 +15,12 @@ final class ArrayBackedSetTests: XCTestCase {
         XCTAssertTrue(set.isEmpty(), message)
     }
 
+    func testSizeZeroAtFirst() {
+        let set = ArrayBackedSet<FileManager>()
+        let expected: UInt = 0
+        let actual = set.size()
+        let message = "Newly created set should be of size 0"
+        XCTAssertEqual(expected, actual, message)
+    }
+    
 }
