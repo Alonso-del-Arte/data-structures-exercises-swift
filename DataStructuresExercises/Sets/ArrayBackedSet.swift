@@ -14,7 +14,7 @@ struct ArrayBackedSet<E> {
     }
     
     func size() -> UInt {
-        UInt.max
+        0
     }
     
     func contains(element: E) -> Bool {
