@@ -22,7 +22,7 @@ struct ArrayBackedSet<E> {
     }
     
     mutating func add(element: E) -> Bool {
-        false
+        true
     }
     
 }
