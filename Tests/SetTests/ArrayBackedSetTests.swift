@@ -37,6 +37,15 @@ final class ArrayBackedSetTests: XCTestCase {
         XCTAssertTrue(set.add(element: here), message)
     }
     
+    func testNoAddDuplicate() {
+        var set = ArrayBackedSet<Date>()
+        let date = Date()
+        let ableToFirstAdd = set.add(element: date)
+        let ableToDuplicateAdd = set.add(element: date)
+        let message = "Should not be able to add \(date) to set twice"
+        XCTAssertTrue(ableToFirstAdd && (!ableToDuplicateAdd), message)
+    }
+    
     // TODO: Test is not empty
     
     // TODO: Test contains and does not contain for non-empty sets
