@@ -18,7 +18,7 @@ struct ArrayBackedSet<E> {
     }
     
     func contains(element: E) -> Bool {
-        true
+        false
     }
     
     mutating func add(element: E) -> Bool {
