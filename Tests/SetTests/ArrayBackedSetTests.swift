@@ -23,4 +23,11 @@ final class ArrayBackedSetTests: XCTestCase {
         XCTAssertEqual(expected, actual, message)
     }
     
+    func testEmptySetDoesNotContainAnyElement() {
+        var set = ArrayBackedSet<Date>()
+        let now = Date()
+        let message = "Empty set should not contain \(now)"
+        XCTAssertFalse(set.contains(element: now), message)
+    }
+    
 }
