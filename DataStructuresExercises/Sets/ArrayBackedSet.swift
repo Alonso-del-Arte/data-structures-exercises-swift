@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct ArrayBackedSet<E> {
+struct ArrayBackedSet<E : Equatable> {
+    
+    var items: [E] = []
     
     func isEmpty() -> Bool {
         true
@@ -22,7 +24,12 @@ struct ArrayBackedSet<E> {
     }
     
     mutating func add(element: E) -> Bool {
-        true
+        if (self.items.contains(element)) {
+            return false
+        } else {
+            self.items.append(element)
+            return true
+        }
     }
     
 }
